@@ -1,0 +1,21 @@
+main {
+	width: $page-width;
+	height: 1000px;
+	background: $main-background;
+	margin: 0px auto 115px auto;
+	display: table;
+	@include box-shadow(0px 0px 8px 2px rgba(0, 0, 0, 0.1));
+	
+	.content, .side-column {
+		display: table-cell;
+	}
+	
+	.content {
+		width: $left-section-width;
+	}
+	
+	.side-column {
+		width: $right-section-width;
+		background: $nav-background;
+	}
+}
