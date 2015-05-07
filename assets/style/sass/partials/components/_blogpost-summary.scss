@@ -4,11 +4,23 @@
 	.title, .short-description {
 		color: $text-color;
 	}
-	
-	.title {
-		font-size: 30px;
-		font-weight: 500;
+		
+	.featured-image-wrapper {
+		width: 660px;
 		margin-bottom: 30px;
+		position: relative;
+		
+		.title {
+			font-size: 30px;
+			font-weight: 400;
+			position: absolute;
+			bottom: 0px;
+			background: rgba(255, 255, 255, 0.7);
+			padding-left: 15px;
+			padding-right: 15px;
+			line-height: 50px;
+			width: 630px;
+		}
 	}
 	
 	.introduction {
@@ -21,7 +33,7 @@
 	.meta-data {
 		float: left;
 		
-		> span, a {
+		> span, > a {
 			padding: 12px;
 			border: 1px solid #CCC;
 			display: inline-block;
@@ -30,19 +42,17 @@
 			background: #DDD;
 			text-decoration: none;
 			@include transition(background-color 0.3s ease);
+			margin-right: 6px;
 			
 			.fa {
 				margin-right: 8px;
 			}
 		}
 		
-		a:hover {
+		a:hover, .tags:hover {
 			background: #CCC;
 			text-decoration: underline;
-		}
-		
-		span {
-			margin-right: 6px;
+			cursor: pointer;
 		}
 	}
 	
@@ -65,6 +75,44 @@
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+	}
+	
+	.tags-and-categories-wrapper {
+		margin-top: 15px;
+		background: #EEE;
+		border-top: 1px solid #DDD;
+		border-bottom: 1px solid #DDD;
+		padding: 10px 0px;
+		
+		.categories, .tags {
+			padding-left: 10px;
+			text-transform: uppercase;
+  			font-size: 12px;
+			color: #999;
+		}
+		
+		a {
+			color: #999;
+			text-decoration: none;
+			margin-right: 10px;
+		}
+		
+		a:hover {
+			text-decoration: underline;
+			color: #777;
+		}
+		
+		.fa {
+			margin-right: 4px;
+		}
+		
+		> div {
+			margin-bottom: 10px;
+		}
+		
+		> div:last-of-type {
+			margin-bottom: 0px;
 		}
 	}
 }
