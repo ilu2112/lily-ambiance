@@ -30,7 +30,7 @@
 		<section class="content">			
 			<?php
 				if ( is_front_page()) {
-					get_template_part( 'post-list' );
+					get_template_part( 'post/post-list' );
 				}
 			?>
 		</section>
