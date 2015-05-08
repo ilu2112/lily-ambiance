@@ -1,19 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: Lily Ambiance
-Theme URI: TBD
-Author: Marcin Skiba
-Author URI: http://mskiba.com/
-Description: Personal wordpress blog theme. Inspired by Coderwall Template (http://coderwall.com) and Ubuntu Ambiance Gnome Theme.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, right-sidebar, white, orange, ubuntu, ambiance 
-Text Domain: lily-ambiance
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,500italic,700,700italic,900,900italic);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
