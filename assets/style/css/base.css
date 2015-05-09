@@ -2605,8 +2605,8 @@ main .side-column {
   font-size: 15px;
   line-height: 18px;
 }
-.blogpost .comments-area-wrapper .comment-respond {
-  margin-top: 35px;
+.blogpost .comments-area-wrapper .comment-list {
+  margin-bottom: 35px;
 }
 .blogpost .comments-area-wrapper #commentform {
   font-size: 15px;
