@@ -2462,19 +2462,19 @@ main .side-column {
   height: 115px;
 }
 
-.blogpost-summary {
+.blogpost {
   padding: 40px 70px;
 }
-.blogpost-summary .title, .blogpost-summary .short-description {
+.blogpost .title, .blogpost .short-description {
   color: #222;
 }
-.blogpost-summary .featured-image-wrapper {
+.blogpost .featured-image-wrapper {
   width: 660px;
   margin-bottom: 30px;
   position: relative;
   min-height: 100px;
 }
-.blogpost-summary .featured-image-wrapper .title {
+.blogpost .featured-image-wrapper .title {
   font-size: 30px;
   font-weight: 400;
   position: absolute;
@@ -2485,16 +2485,16 @@ main .side-column {
   line-height: 50px;
   width: 630px;
 }
-.blogpost-summary .introduction {
+.blogpost .post-content {
   font-size: 15px;
   line-height: 22px;
   text-align: justify;
   margin-bottom: 30px;
 }
-.blogpost-summary .meta-data {
+.blogpost .meta-data {
   float: left;
 }
-.blogpost-summary .meta-data > span, .blogpost-summary .meta-data > a {
+.blogpost .meta-data > span, .blogpost .meta-data > a {
   padding: 12px;
   border: 1px solid #CCC;
   display: inline-block;
@@ -2508,18 +2508,18 @@ main .side-column {
   -o-transition: background-color 0.3s ease;
   margin-right: 6px;
 }
-.blogpost-summary .meta-data > span .fa, .blogpost-summary .meta-data > a .fa {
+.blogpost .meta-data > span .fa, .blogpost .meta-data > a .fa {
   margin-right: 8px;
 }
-.blogpost-summary .meta-data a:hover, .blogpost-summary .meta-data .tags:hover {
+.blogpost .meta-data a:hover, .blogpost .meta-data .tags:hover {
   background: #CCC;
   text-decoration: underline;
   cursor: pointer;
 }
-.blogpost-summary .buttons {
+.blogpost .buttons {
   float: right;
 }
-.blogpost-summary .buttons .read-more-button {
+.blogpost .buttons .read-more-button {
   padding: 12px 12px 12px 20px;
   display: inline-block;
   font-size: 14px;
@@ -2528,42 +2528,135 @@ main .side-column {
   text-decoration: none;
   letter-spacing: 1px;
 }
-.blogpost-summary .buttons .read-more-button .fa {
+.blogpost .buttons .read-more-button .fa {
   margin-left: 8px;
 }
-.blogpost-summary .buttons .read-more-button:hover {
+.blogpost .buttons .read-more-button:hover {
   text-decoration: underline;
 }
-.blogpost-summary .tags-and-categories-wrapper {
+.blogpost .tags-and-categories-wrapper {
   margin-top: 15px;
   background: #EEE;
   border-top: 1px solid #DDD;
   border-bottom: 1px solid #DDD;
   padding: 10px 0px;
 }
-.blogpost-summary .tags-and-categories-wrapper .categories, .blogpost-summary .tags-and-categories-wrapper .tags {
+.blogpost .tags-and-categories-wrapper .categories, .blogpost .tags-and-categories-wrapper .tags {
   padding-left: 10px;
   text-transform: uppercase;
   font-size: 12px;
   color: #999;
 }
-.blogpost-summary .tags-and-categories-wrapper a {
+.blogpost .tags-and-categories-wrapper a {
   color: #999;
   text-decoration: none;
   margin-right: 10px;
 }
-.blogpost-summary .tags-and-categories-wrapper a:hover {
+.blogpost .tags-and-categories-wrapper a:hover {
   text-decoration: underline;
   color: #777;
 }
-.blogpost-summary .tags-and-categories-wrapper .fa {
+.blogpost .tags-and-categories-wrapper .fa {
   margin-right: 4px;
 }
-.blogpost-summary .tags-and-categories-wrapper > div {
+.blogpost .tags-and-categories-wrapper > div {
   margin-bottom: 10px;
 }
-.blogpost-summary .tags-and-categories-wrapper > div:last-of-type {
+.blogpost .tags-and-categories-wrapper > div:last-of-type {
   margin-bottom: 0px;
+}
+.blogpost .comments-area-wrapper {
+  background: #EEE;
+  border-bottom: 1px solid #DDD;
+}
+.blogpost .comments-area-wrapper .comments-area {
+  padding: 10px;
+}
+.blogpost .comments-area-wrapper .comments-title, .blogpost .comments-area-wrapper .comment-reply-title {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.blogpost .comments-area-wrapper .comment {
+  border: 1px solid #CCC;
+  background: #DDD;
+  margin: 15px 10px;
+}
+.blogpost .comments-area-wrapper .comment .comment-intro {
+  padding: 5px 10px;
+  border-bottom: 1px dashed #CCC;
+  color: #666;
+  font-size: 14px;
+}
+.blogpost .comments-area-wrapper .comment .comment-intro a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+.blogpost .comments-area-wrapper .comment .comment-intro a:hover {
+  text-decoration: underline;
+}
+.blogpost .comments-area-wrapper .comment .comment-intro .comment-date {
+  float: right;
+}
+.blogpost .comments-area-wrapper .comment > p {
+  padding: 10px;
+  color: #333;
+  font-size: 15px;
+  line-height: 18px;
+}
+.blogpost .comments-area-wrapper .comment-respond {
+  margin-top: 35px;
+}
+.blogpost .comments-area-wrapper #commentform {
+  font-size: 15px;
+  padding: 0px 10px;
+  margin: 15px 0px;
+}
+.blogpost .comments-area-wrapper #commentform .comment-notes {
+  color: #666;
+  font-size: 15px;
+  margin: 6px 0px;
+}
+.blogpost .comments-area-wrapper #commentform .comment-form-author, .blogpost .comments-area-wrapper #commentform .comment-form-email, .blogpost .comments-area-wrapper #commentform .comment-form-url, .blogpost .comments-area-wrapper #commentform .comment-form-comment {
+  display: table;
+  width: 100%;
+  margin: 10px 0px;
+}
+.blogpost .comments-area-wrapper #commentform .comment-form-author label, .blogpost .comments-area-wrapper #commentform .comment-form-author input, .blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email label, .blogpost .comments-area-wrapper #commentform .comment-form-email input, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url label, .blogpost .comments-area-wrapper #commentform .comment-form-url input, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment label, .blogpost .comments-area-wrapper #commentform .comment-form-comment input, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
+  display: table-cell;
+}
+.blogpost .comments-area-wrapper #commentform .comment-form-author label, .blogpost .comments-area-wrapper #commentform .comment-form-email label, .blogpost .comments-area-wrapper #commentform .comment-form-url label, .blogpost .comments-area-wrapper #commentform .comment-form-comment label {
+  width: 20%;
+  color: #666;
+  vertical-align: middle;
+}
+.blogpost .comments-area-wrapper #commentform .comment-form-author input, .blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email input, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url input, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment input, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
+  width: 472px;
+  border: 1px solid #AAA;
+}
+.blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
+  padding: 10px;
+  resize: vertical;
+}
+.blogpost .comments-area-wrapper #commentform .comment-form-author input, .blogpost .comments-area-wrapper #commentform .comment-form-email input, .blogpost .comments-area-wrapper #commentform .comment-form-url input, .blogpost .comments-area-wrapper #commentform .comment-form-comment input {
+  height: 26px;
+  padding: 0px 10px;
+}
+.blogpost .comments-area-wrapper #commentform .form-allowed-tags {
+  color: #666;
+}
+.blogpost .comments-area-wrapper #commentform .submit {
+  padding: 12px 12px 12px 20px;
+  font-size: 14px;
+  color: #FFF;
+  background: #DD4814;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 20px;
+  margin: 20px auto;
+  display: block;
 }
 
 body {

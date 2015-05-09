@@ -32,6 +32,9 @@
 				if ( is_front_page()) {
 					get_template_part( 'post/post-list' );
 				}
+				if ( is_single()) {
+					get_template_part( 'post/single' );
+				}
 			?>
 		</section>
 		<aside class="side-column"></aside>

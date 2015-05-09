@@ -1,4 +1,4 @@
-.blogpost-summary {
+.blogpost {
 	padding: 40px 70px;
 	
 	.title, .short-description {
@@ -24,7 +24,7 @@
 		}
 	}
 	
-	.introduction {
+	.post-content {
 		font-size: 15px;
 		line-height: 22px;
 		text-align: justify;
@@ -114,6 +114,121 @@
 		
 		> div:last-of-type {
 			margin-bottom: 0px;
+		}
+	}
+
+
+	.comments-area-wrapper {
+		background: #EEE;
+		border-bottom: 1px solid #DDD;
+
+		.comments-area {
+			padding: 10px;
+		}
+
+		.comments-title, .comment-reply-title {
+			color: #999;
+		  text-transform: uppercase;
+		  font-size: 14px;
+		}
+
+		.comment {
+		  border: 1px solid #CCC;
+		  background: #DDD;
+		  margin: 15px 10px;
+
+		  .comment-intro {
+		  	padding: 5px 10px;
+		  	border-bottom: 1px dashed #CCC;
+
+		  	color: #666;
+  			font-size: 14px;
+
+  			a {
+  				color: #666;
+  				font-size: 14px;
+  				text-decoration: none;
+  			}
+
+  			a:hover {
+  				text-decoration: underline;
+  			}
+
+  			.comment-date {
+  				float: right;
+  			}
+		  }
+
+		  > p {
+		  	padding: 10px;
+		  	color: #333;
+			  font-size: 15px;
+			  line-height: 18px;
+		  }
+		}
+
+		.comment-respond {
+			margin-top: 35px;
+		}
+
+		#commentform {
+			font-size: 15px;
+			padding: 0px 10px;
+  		margin: 15px 0px;
+			
+			.comment-notes {
+			  color: #666;
+			  font-size: 15px;
+			  margin: 6px 0px;
+			}
+
+			.comment-form-author, .comment-form-email, .comment-form-url, .comment-form-comment {
+				display: table;
+				width: 100%;
+				margin: 10px 0px;
+
+				label, input, textarea {
+					display: table-cell;
+				}
+
+				label {
+					width: 20%;
+					color: #666;
+					vertical-align: middle;
+				}
+
+				input, textarea {
+					width: 472px;
+					border: 1px solid #AAA
+				}
+
+				textarea {
+					padding: 10px;
+					resize: vertical;
+				}
+
+				input {
+					height: 26px;
+					padding: 0px 10px;
+				}
+			}
+
+			.form-allowed-tags {
+				color: #666;
+			}
+
+			.submit {
+		    padding: 12px 12px 12px 20px;
+			  font-size: 14px;
+			  color: #FFF;
+			  background: #DD4814;
+			  text-decoration: none;
+			  letter-spacing: 1px;
+			  border: none;
+			  margin-top: 20px;
+			  margin: 20px auto;
+			  display: block;
+			}
 		}
 	}
 }
