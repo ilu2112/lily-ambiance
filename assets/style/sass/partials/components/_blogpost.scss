@@ -234,6 +234,11 @@
 			  margin: 20px auto;
 			  display: block;
 			}
+
+			.submit:hover { 
+				text-decoration: underline;
+				cursor: pointer;
+			}
 		}
 	}
 }

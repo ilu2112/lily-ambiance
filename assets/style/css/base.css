@@ -2667,6 +2667,10 @@ main .side-column {
   margin: 20px auto;
   display: block;
 }
+.blogpost .comments-area-wrapper #commentform .submit:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 body {
   font-family: roboto;
