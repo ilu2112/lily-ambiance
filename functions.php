@@ -7,8 +7,9 @@
 ?>
 
 
+
 <?php
-    function format_comment($comment, $args, $depth) {
+    function format_comment( $comment, $args, $depth ) {
         $GLOBALS['comment'] = $comment; ?>
         
         <div <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
@@ -26,4 +27,16 @@
             <?php comment_text(); ?>
         </div>
     <?php }
+?>
+
+
+
+<?php
+    add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
+    function baw_hack_wp_title_for_home( $title ) {
+        if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+            return __( 'Home', 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
+        }
+        return $title;
+    }
 ?>
