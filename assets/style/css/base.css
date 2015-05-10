@@ -2646,6 +2646,10 @@ main .side-column {
 .blogpost .comments-area-wrapper #commentform .form-allowed-tags {
   color: #666;
 }
+.blogpost .comments-area-wrapper #commentform code {
+  font-family: monospace;
+  font-size: 14px;
+}
 .blogpost .comments-area-wrapper #commentform .submit {
   padding: 12px 12px 12px 20px;
   font-size: 14px;
