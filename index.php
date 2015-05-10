@@ -16,11 +16,7 @@
 	
 	<header>
 		<div class="header-holder">
-			<nav>
-				<a href="#">Blog</a>
-				<a href="#" class="active">About me</a>
-				<a href="#">Contact</a>
-			</nav>
+			<?php get_template_part( 'navbar' ); ?>
 		</div>
 	</header>
 	

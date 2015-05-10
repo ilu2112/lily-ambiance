@@ -13,20 +13,26 @@ header {
 	nav {
 		float: right;
 		
+		li, a {
+			text-decoration: none;
+			text-transform: uppercase;
+			display: block;
+			float: left;
+		}
+
 		a {
 			color: $nav-text-color;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: block;
-			float: left;
+			padding: 0px 15px;
 			height: 55px;
 			line-height: 55px;
-			padding: 0px 15px;
 			font-size: 13px;
 			@include transition(background-color 0.3s ease);
 		}
 		
-		a:hover, .active {
+		a:hover, .current_page_item {
 			color: $nav-active-element-text-color;
 			background-color: $nav-active-element-background;
 		}
