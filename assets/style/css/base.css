@@ -2618,6 +2618,12 @@ main .side-column {
   padding: 0px 10px;
   margin: 15px 0px;
 }
+.blogpost .comments-area-wrapper #commentform .logged-in-as {
+  color: #666;
+}
+.blogpost .comments-area-wrapper #commentform .logged-in-as a {
+  color: #333;
+}
 .blogpost .comments-area-wrapper #commentform .comment-notes {
   color: #666;
   font-size: 15px;

@@ -176,6 +176,14 @@
 			padding: 0px 10px;
   		margin: 15px 0px;
 			
+			.logged-in-as {
+				color: #666;
+
+				a {
+					color: #333;
+				}
+			}
+
 			.comment-notes {
 			  color: #666;
 			  font-size: 15px;
