@@ -6,8 +6,15 @@
 
 
 @mixin transition($transition) {
-    transition: $transition;
+  transition: $transition;
 	-webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+}
+
+
+@mixin transform($transform) {
+  -ms-transform: $transform;
+  -webkit-transform: $transform;
+  transform: $transform;
 }

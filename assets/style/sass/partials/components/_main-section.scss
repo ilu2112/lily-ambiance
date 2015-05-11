@@ -17,5 +17,12 @@ main {
 	.side-column {
 		width: 330px;
 		background: $nav-background;
+		vertical-align: top;
+
+		> div {
+			width: 250px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
 	}
 }

@@ -13,7 +13,6 @@
 
 <body>
 	<div id="background"></div>
-	
 	<header>
 		<div class="header-holder">
 			<?php get_template_part( 'navbar' ); ?>
@@ -33,7 +32,9 @@
 				}
 			?>
 		</section>
-		<aside class="side-column"></aside>
+		<section class="side-column">
+			<?php get_template_part( 'about-me' ); ?>
+		</section>
 	</main>
 </body>
 

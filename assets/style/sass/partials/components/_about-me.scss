@@ -1,0 +1,64 @@
+.about-me {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.15);
+
+  .photo-wrapper {
+    float: left;
+    margin: 0px 20px 10px 0px;
+
+    .photo-stack {
+      width: 100px;
+      height: 100px;
+      background: white;
+      position: absolute;
+      border: 2px solid white;
+      transform: rotate(3deg);
+    }
+
+    img {
+      border: 2px solid white;
+      width: 100px;
+      height: 100px;
+      box-shadow: 0px 1px 6px #666;
+      @include transform(rotate(-4deg));
+    }
+  }
+
+  .details {
+    text-align: left;
+    color: #DDD;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .socials {
+    margin-top: 15px;
+    text-align: center;
+
+    .fa {
+      font-size: 36px;
+    }
+
+    > a {
+      color: #DDD;
+      margin-right: 15px;
+    }
+
+    > a:last-of-type {
+      margin-right: 0px;
+    }
+
+    .fa-facebook-official:hover {
+      color: #3A5795;
+    }
+
+    .fa-github-square:hover {
+      color: #FFA500;
+    }
+
+    .fa-linkedin-square:hover {
+      color: #008CBD;
+    }
+  }
+}

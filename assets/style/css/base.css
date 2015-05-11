@@ -2461,6 +2461,12 @@ main .content {
 main .side-column {
   width: 330px;
   background: #333333;
+  vertical-align: top;
+}
+main .side-column > div {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .top-banner {
@@ -2676,6 +2682,62 @@ main .side-column {
 .blogpost .comments-area-wrapper #commentform .submit:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.about-me {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.15);
+}
+.about-me .photo-wrapper {
+  float: left;
+  margin: 0px 20px 10px 0px;
+}
+.about-me .photo-wrapper .photo-stack {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  border: 2px solid white;
+  transform: rotate(3deg);
+}
+.about-me .photo-wrapper img {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 1px 6px #666;
+  -ms-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+.about-me .details {
+  text-align: left;
+  color: #DDD;
+  font-size: 13px;
+  line-height: 16px;
+}
+.about-me .socials {
+  margin-top: 15px;
+  text-align: center;
+}
+.about-me .socials .fa {
+  font-size: 36px;
+}
+.about-me .socials > a {
+  color: #DDD;
+  margin-right: 15px;
+}
+.about-me .socials > a:last-of-type {
+  margin-right: 0px;
+}
+.about-me .socials .fa-facebook-official:hover {
+  color: #3A5795;
+}
+.about-me .socials .fa-github-square:hover {
+  color: #FFA500;
+}
+.about-me .socials .fa-linkedin-square:hover {
+  color: #008CBD;
 }
 
 body {
