@@ -24,7 +24,7 @@
 	<main>
 		<section class="content">			
 			<?php
-				if ( is_front_page()) {
+				if ( is_front_page() || is_category() || is_archive()) {
 					get_template_part( 'post/post-list' );
 				}
 				if ( is_single()) {
@@ -32,8 +32,32 @@
 				}
 			?>
 		</section>
+
+
+
 		<section class="side-column">
 			<?php get_template_part( 'about-me' ); ?>
+			
+			<div class="side-section">
+				<div class="title">
+					Recent posts
+				</div>
+					<?php wp_get_archives('type=postbypost&limit=5'); ?>
+			</div>
+
+			<div class="side-section">
+				<div class="title">
+					Archives
+				</div>
+				<?php wp_get_archives('type=monthly'); ?>
+			</div>
+			
+			<div class="side-section">	
+				<div class="title">
+					Categories
+				</div>
+				<?php wp_list_categories('title_li='); ?>
+			</div>
 		</section>
 	</main>
 </body>

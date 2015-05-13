@@ -2921,6 +2921,37 @@ main .side-column > div {
   color: #C92C19;
 }
 
+.side-section {
+  padding: 20px 0px;
+}
+.side-section .title {
+  margin-bottom: 10px;
+  color: #DDD;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.side-section li {
+  list-style: none;
+}
+.side-section li a {
+  color: #CCC;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 22px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+.side-section li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 body {
   font-family: roboto;
 }
