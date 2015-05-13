@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2401,6 +2402,115 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "";
 }
 
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
 header {
   width: 100%;
   height: 55px;
@@ -2709,10 +2819,45 @@ main .side-column > div {
 }
 .post-content pre {
   white-space: initial;
-  font-family: monospace;
+  font-family: 'Ubuntu Mono';
+  margin: 20px 0px;
 }
 .post-content p {
   margin: 20px 0px;
+}
+.post-content blockquote {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #EEE;
+  font-weight: 300;
+  padding: 0px 20px;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+}
+.post-content blockquote > * {
+  padding: 10px 0px;
+}
+.post-content blockquote p {
+  font-style: italic;
+}
+.post-content ul {
+  list-style: initial;
+  list-style-position: inside;
+}
+.post-content ol {
+  list-style: initial;
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+.post-content img {
+  border: 6px solid #FFF;
+  box-shadow: 0px 1px 6px #666;
+  -webkit-box-shadow: 0px 1px 6px #666;
+  -moz-box-shadow: 0px 1px 6px #666;
+}
+.post-content hr {
+  border-top: 1px solid #333;
+  border-bottom: none;
 }
 
 .about-me {
@@ -2737,6 +2882,8 @@ main .side-column > div {
   width: 100px;
   height: 100px;
   box-shadow: 0px 1px 6px #666;
+  -webkit-box-shadow: 0px 1px 6px #666;
+  -moz-box-shadow: 0px 1px 6px #666;
   -ms-transform: rotate(-4deg);
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);

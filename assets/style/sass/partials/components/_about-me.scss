@@ -20,7 +20,7 @@
       border: 2px solid white;
       width: 100px;
       height: 100px;
-      box-shadow: 0px 1px 6px #666;
+      @include box-shadow(0px 1px 6px #666);
       @include transform(rotate(-4deg));
     }
   }
