@@ -250,3 +250,28 @@
 		}
 	}
 }
+
+
+
+.post-content {
+	h1 { font-size: 2em; }
+	h2 { font-size: 1.5em; }
+	h3 { font-size: 1.17em; }
+	h4 { font-size: 1.12em; }
+	h5 { font-size: .83em; }
+	h6 { font-size: .75em; }
+	h1, h2, h3, h4, h5, h6 {
+		line-height: initial;
+		font-weight: 500;
+		margin: 10px 0px;
+	}
+
+	pre {
+		white-space: initial;
+  	font-family: monospace;
+	}
+
+	p {
+		margin: 20px 0px;
+	}
+}

@@ -2684,6 +2684,37 @@ main .side-column > div {
   cursor: pointer;
 }
 
+.post-content h1 {
+  font-size: 2em;
+}
+.post-content h2 {
+  font-size: 1.5em;
+}
+.post-content h3 {
+  font-size: 1.17em;
+}
+.post-content h4 {
+  font-size: 1.12em;
+}
+.post-content h5 {
+  font-size: .83em;
+}
+.post-content h6 {
+  font-size: .75em;
+}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  line-height: initial;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.post-content pre {
+  white-space: initial;
+  font-family: monospace;
+}
+.post-content p {
+  margin: 20px 0px;
+}
+
 .about-me {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -2721,7 +2752,7 @@ main .side-column > div {
   text-align: center;
 }
 .about-me .socials .fa {
-  font-size: 36px;
+  font-size: 40px;
 }
 .about-me .socials > a {
   color: #DDD;
@@ -2738,6 +2769,9 @@ main .side-column > div {
 }
 .about-me .socials .fa-linkedin-square:hover {
   color: #008CBD;
+}
+.about-me .socials .fa-envelope-square:hover {
+  color: #C92C19;
 }
 
 body {
