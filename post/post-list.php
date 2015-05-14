@@ -11,6 +11,16 @@
 
 
 
+<?php if (is_archive()) { ?>
+  <div class="content-title">
+    <span class="slashes">//</span>
+      <?php echo single_month_title(" "); ?>
+      <?php echo single_cat_title(); ?>
+  </div>
+<?php } ?>
+
+
+
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
     <?php get_template_part( "post/blogpost-summary" ); ?>
 <?php endwhile;?>

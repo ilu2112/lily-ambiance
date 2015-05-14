@@ -13,6 +13,19 @@ main {
 	.content {
 		width: 770px;
 	}
+
+	.content-title {
+	  padding: 40px 0px 20px 0px;
+	  font-size: 36px;
+	  font-weight: 600;
+	  margin: 0px 70px;
+	  border-bottom: 2px dashed $accent-color;
+
+  	.slashes {
+  		font-weight: 900;
+  		color: $accent-color;
+  	}
+	}
 	
 	.side-column {
 		width: 330px;
