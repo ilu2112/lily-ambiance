@@ -1,16 +1,3 @@
-<?php
-  $query_string = 'showposts=5';
-  if (strlen(get_query_var('cat')) > 0) {
-    $query_string .= '&cat='.get_query_var('cat'); 
-  }
-  if (strlen(get_query_var('m')) > 0) {
-    $query_string .= '&m='.get_query_var('m'); 
-  }
-  $the_query = new WP_Query( $query_string );
-?>
-
-
-
 <?php if (is_archive()) { ?>
   <div class="content-title">
     <span class="slashes">//</span>
@@ -20,7 +7,23 @@
 <?php } ?>
 
 
+<?php
+  // get posts data
+  $args = array( 'posts_per_page' => get_option('posts_per_page') );
+  $params_to_pass = array( 'cat', 'm', 'tag', 'paged');
+  foreach ( $params_to_pass as $param ) :
+    if (get_query_var($param)) {
+      $args[$param] = get_query_var($param);
+    }
+  endforeach;
+  $myposts = get_posts($args);
+  
+  // renger posts list
+  foreach ( $myposts as $post ) : setup_postdata( $post );
+    get_template_part( "post/blogpost-summary" );
+  endforeach; 
+  wp_reset_postdata();
+?>
 
-<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-    <?php get_template_part( "post/blogpost-summary" ); ?>
-<?php endwhile;?>
+
+<?php numeric_posts_pagination(); ?>

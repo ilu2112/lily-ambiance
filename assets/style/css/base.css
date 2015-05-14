@@ -2965,6 +2965,58 @@ main .side-column > div {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.pagination {
+  padding: 20px 70px 40px 70px;
+  text-align: center;
+}
+.pagination li {
+  display: inline-block;
+  min-width: 30px;
+}
+.pagination li a {
+  display: block;
+  height: 30px;
+  min-width: 10px;
+  line-height: 30px;
+  padding: 0px 10px;
+  background: #EEE;
+  text-decoration: none;
+  border: 1px solid #DDD;
+  color: #333;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.pagination li .fa-long-arrow-right {
+  margin-left: 8px;
+}
+.pagination li .fa-long-arrow-left {
+  margin-right: 8px;
+}
+.pagination .prev-page {
+  float: left;
+}
+.pagination .next-page {
+  float: right;
+}
+.pagination .active a {
+  background: #DD4814;
+  color: #FFF;
+}
+.pagination li:not(.disabled) a:hover {
+  background: #DD4814;
+  color: #FFF;
+}
+.pagination .disabled {
+  opacity: 0.5;
+}
+.pagination .disabled a {
+  color: #DDD;
+}
+
 body {
   font-family: roboto;
 }
