@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,100,100italic,300,400italic,500italic,500,700,700italic,900,900italic&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -2610,18 +2610,21 @@ main .side-column > div {
   font-size: 30px;
   font-weight: 400;
   position: absolute;
-  bottom: 0px;
   background: rgba(255, 255, 255, 0.7);
   padding-left: 15px;
   padding-right: 15px;
   line-height: 50px;
-  width: 630px;
+  width: 588px;
+  left: 6px;
+  bottom: 6px;
 }
-.blogpost .post-content, .blogpost .page-content-wrapper {
-  font-size: 15px;
-  line-height: 22px;
-  text-align: justify;
-  margin-bottom: 30px;
+.blogpost .featured-image-wrapper img {
+  display: block;
+  width: 618px;
+  border: 6px solid #FFF;
+  box-shadow: 0px 1px 6px #666;
+  -webkit-box-shadow: 0px 1px 6px #666;
+  -moz-box-shadow: 0px 1px 6px #666;
 }
 .blogpost .meta-data {
   float: left;
@@ -2805,38 +2808,44 @@ main .side-column > div {
   cursor: pointer;
 }
 
-.post-content h1, .page-content-wrapper h1 {
+.post-content, .page-content-wrapper .page-content {
+  font-size: 15px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.post-content h1, .page-content-wrapper .page-content h1 {
   font-size: 2em;
 }
-.post-content h2, .page-content-wrapper h2 {
+.post-content h2, .page-content-wrapper .page-content h2 {
   font-size: 1.5em;
 }
-.post-content h3, .page-content-wrapper h3 {
+.post-content h3, .page-content-wrapper .page-content h3 {
   font-size: 1.17em;
 }
-.post-content h4, .page-content-wrapper h4 {
+.post-content h4, .page-content-wrapper .page-content h4 {
   font-size: 1.12em;
 }
-.post-content h5, .page-content-wrapper h5 {
+.post-content h5, .page-content-wrapper .page-content h5 {
   font-size: .83em;
 }
-.post-content h6, .page-content-wrapper h6 {
+.post-content h6, .page-content-wrapper .page-content h6 {
   font-size: .75em;
 }
-.post-content h1, .page-content-wrapper h1, .post-content h2, .page-content-wrapper h2, .post-content h3, .page-content-wrapper h3, .post-content h4, .page-content-wrapper h4, .post-content h5, .page-content-wrapper h5, .post-content h6, .page-content-wrapper h6 {
+.post-content h1, .page-content-wrapper .page-content h1, .post-content h2, .page-content-wrapper .page-content h2, .post-content h3, .page-content-wrapper .page-content h3, .post-content h4, .page-content-wrapper .page-content h4, .post-content h5, .page-content-wrapper .page-content h5, .post-content h6, .page-content-wrapper .page-content h6 {
   line-height: initial;
   font-weight: 500;
   margin: 10px 0px;
 }
-.post-content pre, .page-content-wrapper pre {
-  white-space: initial;
+.post-content pre, .page-content-wrapper .page-content pre {
+  white-space: normal;
   font-family: 'Ubuntu Mono';
   margin: 20px 0px;
 }
-.post-content p, .page-content-wrapper p {
+.post-content p, .page-content-wrapper .page-content p {
   margin: 20px 0px;
 }
-.post-content blockquote, .page-content-wrapper blockquote {
+.post-content blockquote, .page-content-wrapper .page-content blockquote {
   margin-left: 20px;
   margin-right: 20px;
   background: #EEE;
@@ -2845,28 +2854,28 @@ main .side-column > div {
   border-left: 1px solid #DDD;
   border-right: 1px solid #DDD;
 }
-.post-content blockquote > *, .page-content-wrapper blockquote > * {
+.post-content blockquote > *, .page-content-wrapper .page-content blockquote > * {
   padding: 10px 0px;
 }
-.post-content blockquote p, .page-content-wrapper blockquote p {
+.post-content blockquote p, .page-content-wrapper .page-content blockquote p {
   font-style: italic;
 }
-.post-content ul, .page-content-wrapper ul {
+.post-content ul, .page-content-wrapper .page-content ul {
   list-style: initial;
   list-style-position: inside;
 }
-.post-content ol, .page-content-wrapper ol {
+.post-content ol, .page-content-wrapper .page-content ol {
   list-style: initial;
   list-style-position: inside;
   list-style-type: decimal;
 }
-.post-content img, .page-content-wrapper img {
+.post-content img, .page-content-wrapper .page-content img {
   border: 6px solid #FFF;
   box-shadow: 0px 1px 6px #666;
   -webkit-box-shadow: 0px 1px 6px #666;
   -moz-box-shadow: 0px 1px 6px #666;
 }
-.post-content hr, .page-content-wrapper hr {
+.post-content hr, .page-content-wrapper .page-content hr {
   border-top: 1px solid #333;
   border-bottom: none;
 }
@@ -3022,6 +3031,9 @@ main .side-column > div {
 
 .page-content-wrapper .page-content {
   padding: 20px 70px 40px 70px;
+}
+.page-content-wrapper .page-content img {
+  width: 618px;
 }
 
 body {

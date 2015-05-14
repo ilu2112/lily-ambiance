@@ -1,10 +1,8 @@
- <!--
-  Source:
-  http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/
--->
- <?php 
-  function numeric_posts_pagination() {
+<?php 
+  // Source:
+  // http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/
 
+  function numeric_posts_pagination() {
     if( is_singular() )
       return;
 

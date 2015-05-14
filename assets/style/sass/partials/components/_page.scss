@@ -1,7 +1,11 @@
 .page-content-wrapper {
-  @extend .post-content;
 
   .page-content {
+    @extend .post-content;
     padding: 20px 70px 40px 70px;
+
+    img {
+      width: 618px;
+    }
   }
 }

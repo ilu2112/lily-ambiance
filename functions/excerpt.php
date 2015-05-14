@@ -1,9 +1,7 @@
-<!--
-    Source:
-    https://wordpress.stackexchange.com/questions/141125/allow-html-in-excerpt/141136#141136?newreg=2f459c4a3973421cb1c8931ed29ac0f0
--->
-
 <?php
+    // Source:
+    // https://wordpress.stackexchange.com/questions/141125/allow-html-in-excerpt/141136#141136?newreg=2f459c4a3973421cb1c8931ed29ac0f0
+    
     if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) : 
         function wpse_custom_wp_trim_excerpt($wpse_excerpt) {
             $raw_excerpt = $wpse_excerpt;

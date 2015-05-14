@@ -13,24 +13,25 @@
 		
 		.title {
 			font-size: 30px;
-			font-weight: 400;
-			position: absolute;
-			bottom: 0px;
-			background: rgba(255, 255, 255, 0.7);
-			padding-left: 15px;
-			padding-right: 15px;
-			line-height: 50px;
-			width: 630px;
+		  font-weight: 400;
+		  position: absolute;
+		  background: rgba(255, 255, 255, 0.7);
+		  padding-left: 15px;
+		  padding-right: 15px;
+		  line-height: 50px;
+		  width: 588px;
+		  left: 6px;
+		  bottom: 6px;
+		}
+
+		img {
+			display: block;
+			width: 618px;
+			border: 6px solid #FFF;
+			@include box-shadow(0px 1px 6px #666);
 		}
 	}
-	
-	.post-content {
-		font-size: 15px;
-		line-height: 22px;
-		text-align: justify;
-		margin-bottom: 30px;
-	}
-	
+
 	.meta-data {
 		float: left;
 		
@@ -254,6 +255,11 @@
 
 
 .post-content {
+	font-size: 15px;
+	line-height: 22px;
+	text-align: justify;
+	margin-bottom: 30px;
+
 	h1 {
 		font-size: 2em;
 	}
@@ -285,7 +291,7 @@
 	}
 
 	pre {
-		white-space: initial;
+		white-space: normal;
   	font-family: 'Ubuntu Mono';
   	margin: 20px 0px;
 	}
