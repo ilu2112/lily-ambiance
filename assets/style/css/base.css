@@ -2935,6 +2935,10 @@ main .side-column > div {
 .side-section {
   padding: 20px 0px;
 }
+.side-section .slashes {
+  color: #DD4814;
+  font-weight: 900;
+}
 .side-section .title {
   margin-bottom: 10px;
   color: #DDD;
@@ -2942,7 +2946,6 @@ main .side-column > div {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  text-decoration: underline;
 }
 .side-section li {
   list-style: none;
@@ -2952,7 +2955,7 @@ main .side-column > div {
   width: 100%;
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   line-height: 22px;
   transition: background-color 0.3s ease;

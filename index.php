@@ -40,21 +40,21 @@
 			
 			<div class="side-section">
 				<div class="title">
-					Recent posts
+					<span class="slashes">//</span> Recent posts
 				</div>
 					<?php wp_get_archives('type=postbypost&limit=5'); ?>
 			</div>
 
 			<div class="side-section">
 				<div class="title">
-					Archives
+					<span class="slashes">//</span> Archives
 				</div>
 				<?php wp_get_archives('type=monthly'); ?>
 			</div>
 			
 			<div class="side-section">	
 				<div class="title">
-					Categories
+					<span class="slashes">//</span> Categories
 				</div>
 				<?php wp_list_categories('title_li='); ?>
 			</div>
