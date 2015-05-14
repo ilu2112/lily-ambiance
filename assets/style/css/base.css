@@ -2929,8 +2929,9 @@ main .side-column > div {
   color: #DDD;
   text-transform: uppercase;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
+  text-decoration: underline;
 }
 .side-section li {
   list-style: none;
@@ -2947,6 +2948,7 @@ main .side-column > div {
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
+  padding: 2px 0px;
 }
 .side-section li a:hover {
   background: rgba(0, 0, 0, 0.2);

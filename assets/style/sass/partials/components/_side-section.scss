@@ -6,15 +6,16 @@
     color: #DDD;
     text-transform: uppercase;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
+    text-decoration: underline;
   }
 
   li {
     list-style: none;
 
     a {
-     color: #CCC;
+      color: #CCC;
       width: 100%;
       display: block;
       text-align: center;
@@ -22,6 +23,7 @@
       text-decoration: none;
       line-height: 22px;
       @include transition(background-color 0.3s ease);
+      padding: 2px 0px
     }
 
     a:hover {
