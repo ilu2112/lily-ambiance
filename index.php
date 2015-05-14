@@ -24,11 +24,12 @@
 	<main>
 		<section class="content">			
 			<?php
-				if ( is_front_page() || is_category() || is_archive()) {
+				if ( is_front_page() || is_category() || is_archive() ) {
 					get_template_part( 'post/post-list' );
-				}
-				if ( is_single()) {
+				} else if ( is_single() ) {
 					get_template_part( 'post/single' );
+				} else if ( is_page() ) {
+					get_template_part( 'page-content' );
 				}
 			?>
 		</section>
