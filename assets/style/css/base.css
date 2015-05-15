@@ -2524,6 +2524,13 @@ header .header-holder {
   height: 100%;
   margin: auto;
 }
+header .page-logo {
+  color: white;
+  font-size: 30px;
+  float: left;
+  line-height: 55px;
+  font-weight: 700;
+}
 header nav {
   float: right;
 }
@@ -2574,10 +2581,6 @@ main .content-title {
   font-weight: 600;
   margin: 0px 70px;
   border-bottom: 2px dashed #DD4814;
-}
-main .content-title .slashes {
-  font-weight: 900;
-  color: #DD4814;
 }
 main .side-column {
   width: 330px;
@@ -2944,10 +2947,6 @@ main .side-column > div {
 .side-section {
   padding: 20px 0px;
 }
-.side-section .slashes {
-  color: #DD4814;
-  font-weight: 900;
-}
 .side-section .title {
   margin-bottom: 10px;
   color: #DDD;
@@ -3049,6 +3048,11 @@ body {
   left: 0px;
   right: 0px;
   z-index: -2;
+}
+
+.slashes {
+  color: #DD4814;
+  font-weight: 900 !important;
 }
 
 .clearfix {

@@ -15,6 +15,9 @@
 	<div id="background"></div>
 	<header>
 		<div class="header-holder">
+			<div class="page-logo">
+				<span class="slashes">//</span> <?php echo get_bloginfo('name'); ?>
+			</div>
 			<?php get_template_part( 'navbar' ); ?>
 		</div>
 	</header>
