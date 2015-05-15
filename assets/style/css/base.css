@@ -2529,11 +2529,13 @@ header .header-holder {
   margin: auto;
 }
 header .page-logo {
+  display: block;
   color: white;
   font-size: 30px;
   float: left;
   line-height: 55px;
   font-weight: 700;
+  text-decoration: none;
 }
 header nav {
   float: right;
