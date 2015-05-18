@@ -20,7 +20,7 @@
   
   // renger posts list
   foreach ( $myposts as $post ) : setup_postdata( $post );
-    get_template_part( "post/blogpost-excerpt" );
+    get_template_part( "post/post-excerpt" );
     wp_reset_postdata();
   endforeach;
 ?>
