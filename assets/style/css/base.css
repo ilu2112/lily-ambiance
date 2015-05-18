@@ -2894,6 +2894,7 @@ main .side-column > div {
   padding-top: 40px;
   padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.15);
+  min-height: 120px;
 }
 .about-me .photo-wrapper {
   float: left;
