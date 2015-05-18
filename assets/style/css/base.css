@@ -3043,6 +3043,10 @@ main .side-column > div {
   width: 618px;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: roboto;
   padding-top: 55px;
