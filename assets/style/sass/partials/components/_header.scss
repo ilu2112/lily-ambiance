@@ -52,3 +52,24 @@ header {
 		}
 	}
 }
+
+
+
+@media (max-width: 640px) {
+	header {
+		height: initial;
+
+		.header-holder {
+			width: 100%;
+		}
+
+		.page-logo {
+			float: initial;
+		}
+
+		nav {
+			float: initial;
+			display: none;
+		}
+	}
+}

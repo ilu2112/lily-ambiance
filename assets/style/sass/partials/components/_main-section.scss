@@ -27,9 +27,36 @@ main {
 		vertical-align: top;
 
 		> div {
-			width: 250px;
-			padding-left: 40px;
-			padding-right: 40px;
+			width: 100%;
+		}
+
+		.sidebar-content-wrapper {
+		  padding: 20px 40px;
+		}
+	}
+}
+
+
+
+@media (max-width: 640px) {
+	main {
+		display: block;
+		width: 100%;
+		margin: 0px;
+		
+		.content, .side-column {
+			display: block;
+			width: 100%;
+		}
+
+		.side-column {
+			> div {
+				width: 100%;
+			}
+
+			.sidebar-content-wrapper {
+			  padding: 20px 20px;
+			}
 		}
 	}
 }

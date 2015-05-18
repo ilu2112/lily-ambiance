@@ -1,9 +1,8 @@
 .about-me {
-  padding-top: 40px;
-  padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.15);
   min-height: 120px;
-
+  padding-top: 20px;
+  
   .photo-wrapper {
     float: left;
     margin: 0px 20px 10px 0px;
@@ -31,6 +30,7 @@
     color: #DDD;
     font-size: 13px;
     line-height: 16px;
+    min-height: 105px;
   }
 
   .socials {

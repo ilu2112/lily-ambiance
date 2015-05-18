@@ -6,29 +6,35 @@
 	}
 		
 	.featured-image-wrapper {
-		width: 630px;
+		width: 100%;
 		margin-bottom: 30px;
 		position: relative;
 		min-height: 100px;
 		
+
+		.title-wrapper {
+			position: absolute;
+			left: 0px;
+		  bottom: 0px;
+		  width: 100%;
+		}
+
 		.title {
 			font-size: 30px;
 		  font-weight: 400;
-		  position: absolute;
 		  background: rgba(255, 255, 255, 0.7);
-		  padding-left: 15px;
-		  padding-right: 15px;
 		  line-height: 50px;
-		  width: 588px;
-		  left: 6px;
-		  bottom: 6px;
+		  margin: 0px 6px 6px 6px;
+		}
+
+		.featured-image {
+			border: 6px solid #FFF;
+			@include box-shadow(0px 1px 6px #666);
 		}
 
 		img {
 			display: block;
-			width: 618px;
-			border: 6px solid #FFF;
-			@include box-shadow(0px 1px 6px #666);
+			width: 100%;
 		}
 	}
 
@@ -338,5 +344,21 @@
 	hr {
 		border-top: 1px solid #333;
   	border-bottom: none;
+	}
+}
+
+
+
+@media (max-width: 640px) {
+	.blogpost {
+		padding: 40px 20px;
+
+		.featured-image-wrapper {
+			.title {
+				font-size: 18px;
+				line-height: 30px;
+				padding: 0px 10px;
+			}
+		}
 	}
 }
