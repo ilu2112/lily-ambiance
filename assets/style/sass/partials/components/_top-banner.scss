@@ -4,7 +4,7 @@
 
 
 
-@media (max-width: 640px) {
+@media (max-width: $media-query-medium) {
   .top-banner {
     display: none;
   }

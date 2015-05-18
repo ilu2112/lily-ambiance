@@ -2574,6 +2574,7 @@ header nav a:hover, header nav .current_page_item {
   }
   header .page-logo {
     float: initial;
+    padding: 0px 20px;
   }
   header nav {
     float: initial;
@@ -2614,6 +2615,12 @@ main .side-column .sidebar-content-wrapper {
   padding: 20px 40px;
 }
 
+@media (max-width: 360px) {
+  main .content-title {
+    font-size: 24px !important;
+    padding-top: 30px !important;
+  }
+}
 @media (max-width: 640px) {
   main {
     display: block;
@@ -2629,6 +2636,9 @@ main .side-column .sidebar-content-wrapper {
   }
   main .side-column .sidebar-content-wrapper {
     padding: 20px 20px;
+  }
+  main .content-title {
+    margin: 0px 20px;
   }
 }
 .top-banner {
@@ -2735,13 +2745,15 @@ main .side-column .sidebar-content-wrapper {
   color: #999;
   text-decoration: none;
   margin-right: 10px;
+  white-space: pre-wrap;
+  line-height: 20px;
 }
 .blogpost .tags-and-categories-wrapper a:hover {
   text-decoration: underline;
   color: #777;
 }
 .blogpost .tags-and-categories-wrapper .fa {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 .blogpost .tags-and-categories-wrapper > div {
   margin-bottom: 10px;
@@ -2930,14 +2942,45 @@ main .side-column .sidebar-content-wrapper {
   border-bottom: none;
 }
 
+@media (max-width: 360px) {
+  .blogpost .featured-image-wrapper .title {
+    font-size: 18px !important;
+    line-height: 30px !important;
+    padding: 0px 10px;
+  }
+}
 @media (max-width: 640px) {
   .blogpost {
     padding: 40px 20px;
   }
   .blogpost .featured-image-wrapper .title {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 40px;
     padding: 0px 10px;
+  }
+  .blogpost .meta-data {
+    float: initial;
+  }
+  .blogpost .meta-data .comments {
+    float: right;
+    margin-right: 0px;
+  }
+  .blogpost .buttons {
+    margin-top: 10px;
+  }
+  .blogpost .comments-area-wrapper #commentform .comment-form-author, .blogpost .comments-area-wrapper #commentform .comment-form-email, .blogpost .comments-area-wrapper #commentform .comment-form-url, .blogpost .comments-area-wrapper #commentform .comment-form-comment {
+    display: block;
+  }
+  .blogpost .comments-area-wrapper #commentform .comment-form-author label, .blogpost .comments-area-wrapper #commentform .comment-form-author input, .blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email label, .blogpost .comments-area-wrapper #commentform .comment-form-email input, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url label, .blogpost .comments-area-wrapper #commentform .comment-form-url input, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment label, .blogpost .comments-area-wrapper #commentform .comment-form-comment input, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
+    display: block;
+  }
+  .blogpost .comments-area-wrapper #commentform .comment-form-author label, .blogpost .comments-area-wrapper #commentform .comment-form-email label, .blogpost .comments-area-wrapper #commentform .comment-form-url label, .blogpost .comments-area-wrapper #commentform .comment-form-comment label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .blogpost .comments-area-wrapper #commentform .comment-form-author input, .blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email input, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url input, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment input, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
+    width: 100%;
+    padding: 0px;
   }
 }
 .about-me {

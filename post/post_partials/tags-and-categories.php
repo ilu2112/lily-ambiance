@@ -5,7 +5,7 @@
       $output = '';
       if ($categories) {
         foreach ($categories as $category) {
-          $output .= '<a href="'.get_category_link( $category->term_id ).'"><i class="fa fa-bookmark"></i>'.$category->cat_name.'</a>';
+          $output .= '<a href="'.get_category_link( $category->term_id ).'"><i class="fa fa-bookmark"></i>&nbsp;'.$category->cat_name.'</a>';
         }
         echo trim($output, $separator);
       }
@@ -17,7 +17,7 @@
       $output = '';
       if ($tags) {
         foreach ($tags as $tag) {
-          $output .= '<a href="'.get_tag_link( $tag->term_id ).'"><i class="fa fa-tag"></i>'.$tag->name.'</a>';
+          $output .= '<a href="'.get_tag_link( $tag->term_id ).'"><i class="fa fa-tag"></i>&nbsp;'.$tag->name.'</a>';
         }
         echo trim($output, $separator);
       }
