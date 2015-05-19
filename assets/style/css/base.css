@@ -2537,6 +2537,9 @@ header .page-logo {
   font-weight: 700;
   text-decoration: none;
 }
+header .burger-button {
+  display: none;
+}
 header nav {
   float: right;
 }
@@ -2573,12 +2576,45 @@ header nav a:hover, header nav .current_page_item {
     width: 100%;
   }
   header .page-logo {
-    float: initial;
+    float: left;
     padding: 0px 20px;
   }
+  header .burger-button {
+    display: block;
+    float: right;
+    font-size: 30px;
+    line-height: 55px;
+    width: 55px;
+    text-align: center;
+    color: #FFF;
+  }
+  header .burger-button.active {
+    color: #DD4814;
+  }
   header nav {
-    float: initial;
     display: none;
+    float: initial;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    background: #333333;
+    min-width: 150px;
+    z-index: -1;
+    box-shadow: 0px 0px 10px 2px #272A2A;
+    -webkit-box-shadow: 0px 0px 10px 2px #272A2A;
+    -moz-box-shadow: 0px 0px 10px 2px #272A2A;
+  }
+  header nav li {
+    float: initial;
+    display: block;
+    height: 55px;
+  }
+  header nav li a {
+    width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 main {
