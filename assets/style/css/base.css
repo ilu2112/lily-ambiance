@@ -2970,7 +2970,8 @@ main .side-column .sidebar-content-wrapper {
   box-shadow: 0px 1px 6px #666;
   -webkit-box-shadow: 0px 1px 6px #666;
   -moz-box-shadow: 0px 1px 6px #666;
-  max-width: 618px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .post-content hr, .page-content-wrapper .page-content hr {
   border-top: 1px solid #333;
@@ -3177,10 +3178,12 @@ main .side-column .sidebar-content-wrapper {
 .page-content-wrapper .page-content {
   padding: 20px 70px 40px 70px;
 }
-.page-content-wrapper .page-content img {
-  width: 618px;
-}
 
+@media (max-width: 640px) {
+  .page-content-wrapper .page-content {
+    padding: 20px 20px 40px 20px;
+  }
+}
 html, body {
   height: 100%;
 }

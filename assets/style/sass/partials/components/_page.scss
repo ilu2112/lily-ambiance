@@ -3,9 +3,15 @@
   .page-content {
     @extend .post-content;
     padding: 20px 70px 40px 70px;
+  }
+}
 
-    img {
-      width: 618px;
+
+
+@media (max-width: $media-query-medium) {
+  .page-content-wrapper {
+    .page-content {
+      padding: 20px 20px 40px 20px;
     }
   }
 }
