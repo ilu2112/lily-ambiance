@@ -9,8 +9,6 @@
 		width: 100%;
 		margin-bottom: 30px;
 		position: relative;
-		min-height: 100px;
-		
 
 		.title-wrapper {
 			position: absolute;
@@ -104,8 +102,8 @@
 			color: #999;
 			text-decoration: none;
 			margin-right: 10px;
-			white-space: pre-wrap;
   		line-height: 20px;
+  		display: inline-block;
 		}
 		
 		a:hover {
@@ -379,6 +377,10 @@
 
     .meta-data {
       float: initial;
+
+      .pub-date {
+      	margin-right: 0px;
+      }
 
       .comments {
         float: right;

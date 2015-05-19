@@ -2660,7 +2660,6 @@ main .side-column .sidebar-content-wrapper {
   width: 100%;
   margin-bottom: 30px;
   position: relative;
-  min-height: 100px;
 }
 .blogpost .featured-image-wrapper .title-wrapper {
   position: absolute;
@@ -2745,8 +2744,8 @@ main .side-column .sidebar-content-wrapper {
   color: #999;
   text-decoration: none;
   margin-right: 10px;
-  white-space: pre-wrap;
   line-height: 20px;
+  display: inline-block;
 }
 .blogpost .tags-and-categories-wrapper a:hover {
   text-decoration: underline;
@@ -2960,6 +2959,9 @@ main .side-column .sidebar-content-wrapper {
   }
   .blogpost .meta-data {
     float: initial;
+  }
+  .blogpost .meta-data .pub-date {
+    margin-right: 0px;
   }
   .blogpost .meta-data .comments {
     float: right;
