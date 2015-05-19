@@ -2983,6 +2983,13 @@ main .side-column .sidebar-content-wrapper {
   .blogpost .comments-area-wrapper #commentform .comment-form-author input, .blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email input, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url input, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment input, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
     width: 100%;
     padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 10px;
+  }
+  .blogpost .comments-area-wrapper #commentform .comment-form-author textarea, .blogpost .comments-area-wrapper #commentform .comment-form-email textarea, .blogpost .comments-area-wrapper #commentform .comment-form-url textarea, .blogpost .comments-area-wrapper #commentform .comment-form-comment textarea {
+    padding: 10px;
   }
 }
 .about-me {
