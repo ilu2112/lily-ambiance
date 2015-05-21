@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/style/css/base.css" type="text/css" media="screen" />
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/lightbox.min.js"></script>
 </head>
 
 <body>
