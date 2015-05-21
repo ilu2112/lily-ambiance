@@ -3386,6 +3386,14 @@ main .side-column .sidebar-content-wrapper {
   color: #DDD;
 }
 
+@media (max-width: 640px) {
+  .pagination {
+    padding: 20px 20px 40px 20px;
+  }
+  .pagination li:not(.prev-page):not(.next-page) {
+    display: none;
+  }
+}
 .page-content-wrapper .page-content {
   padding: 20px 70px 40px 70px;
 }

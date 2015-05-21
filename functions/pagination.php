@@ -71,7 +71,6 @@
     } else {
       printf('<li class="next-page disabled"><a>Next Page<i class="fa fa-long-arrow-right"></i></a></li>');
     }
-    echo '</ul></div>' . "\n";
-
+    echo '</ul><div class="clearfix"></div></div>' . "\n";
   }
 ?>
