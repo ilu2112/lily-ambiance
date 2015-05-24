@@ -2735,7 +2735,7 @@ header {
   -moz-box-shadow: 0px 0px 10px 1px #272A2A;
 }
 header .header-holder {
-  width: 1100px;
+  max-width: 1100px;
   height: 100%;
   margin: auto;
 }
@@ -2801,6 +2801,9 @@ header nav a:hover, header nav .current_page_item {
   }
   header .burger-button.active {
     color: #DD4814;
+  }
+  header .burger-button:hover {
+    cursor: pointer;
   }
   header nav {
     display: none;

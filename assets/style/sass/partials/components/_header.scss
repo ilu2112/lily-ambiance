@@ -9,7 +9,7 @@ header {
   @include box-shadow(0px 0px 10px 1px #272A2A);
 
   .header-holder {
-    width: 1100px;
+    max-width: 1100px;
     height: 100%;
     margin: auto;
   }
@@ -83,6 +83,10 @@ header {
       
       &.active {
         color: $accent-color;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
 
