@@ -1,4 +1,4 @@
-# lily-ambiance
+# lily-ambiance [![Code Climate](https://codeclimate.com/github/ilu2112/lily-ambiance/badges/gpa.svg)](https://codeclimate.com/github/ilu2112/lily-ambiance)
 
 Minimalistic Responsive Wordpress theme created for my own blog. Inspired by Coderwall Template (http://coderwall.com) and Ubuntu Ambiance Gnome Theme.
 
