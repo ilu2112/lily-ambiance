@@ -6,4 +6,6 @@
   include 'functions/about-me-customizer.php';
   include 'functions/excerpt.php';
   include 'functions/pagination.php';
+
+  add_filter('show_admin_bar', '__return_false');
 ?>
