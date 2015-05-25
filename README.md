@@ -7,3 +7,7 @@ Minimalistic Responsive Wordpress theme created for my own blog. Inspired by Cod
 Stylesheets have been developed with `Sass` (http://sass-lang.com/) and `compass` (http://compass-style.org/, https://github.com/Compass/compass). Install `compass` and run `compass w` command under `/assets/style` directory.
 
 File gathering all stylesheets is located under `./assets/style/sass/base.scss` and it compiles into `./assets/style/base.css`.
+
+
+### Plugins worth installing
+* Lightbox 2 - https://wordpress.org/plugins/wp-lightbox-2/
