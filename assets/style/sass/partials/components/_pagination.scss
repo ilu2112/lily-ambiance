@@ -40,14 +40,14 @@
 
   .active {
     a {
-      background: $nav-active-element-background;
-      color: $nav-active-element-text-color;
+      background: $accent-color;
+      color: #FFF;
     }
   }
 
   li:not(.disabled) a:hover {
-    background: $nav-active-element-background;
-    color: $nav-active-element-text-color;
+    background: $accent-color;
+    color: #FFF;
   }
 
   .disabled {

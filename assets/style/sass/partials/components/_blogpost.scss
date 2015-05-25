@@ -2,7 +2,7 @@
 	padding: 40px 70px;
 	
 	.title, .short-description {
-		color: $text-color;
+		color: #222;
 	}
 		
 	.featured-image-wrapper {
@@ -70,8 +70,8 @@
 			padding: 12px 12px 12px 20px;
 			display: inline-block;
 			font-size: 14px;
-			color: $nav-active-element-text-color;
-			background: $nav-active-element-background;
+			color: #FFF;
+			background: $accent-color;
 			text-decoration: none;
 			letter-spacing: 1px;
 			
