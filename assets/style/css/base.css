@@ -2857,6 +2857,7 @@ main .side-column {
   width: 330px;
   background: #333333;
   vertical-align: top;
+  padding-bottom: 20px;
 }
 main .side-column > div {
   width: 100%;
