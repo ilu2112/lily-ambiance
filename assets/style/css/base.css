@@ -3414,12 +3414,14 @@ html {
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 100%;
+  min-width: 100%;
 }
 
 body {
   font-family: roboto;
   padding-top: 55px;
   min-height: 100%;
+  min-width: 100%;
 }
 
 #background {
