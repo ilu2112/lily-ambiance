@@ -40,7 +40,7 @@
           'label'          => 'Description',
           'section'        => 'about_me_section',
           'settings'       => 'description_field',
-          'type'           => 'text'
+          'type'           => 'textarea'
         )
       )
     );
