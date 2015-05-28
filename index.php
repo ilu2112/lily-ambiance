@@ -14,7 +14,6 @@
 </head>
 
 <body>
-  <div id="background"></div>
   <header>
     <div class="header-holder">
       <a class="page-logo" href="/">

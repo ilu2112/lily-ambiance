@@ -3424,21 +3424,6 @@ body {
   min-width: 100%;
 }
 
-#background {
-  display: none;
-  background: url(../../images/background.jpg) no-repeat fixed center;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  z-index: -2;
-}
-
 .slashes {
   color: #DD4814;
   font-weight: 900 !important;

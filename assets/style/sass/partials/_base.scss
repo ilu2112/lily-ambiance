@@ -27,19 +27,6 @@ body {
 
 
 
-#background {
-	display: none;
-	background: url(../../images/background.jpg) no-repeat fixed center;
-	@include background-size(cover);
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	z-index: -2;
-}
-
-
 .slashes {
   color: $accent-color;
   font-weight: 900 !important;
