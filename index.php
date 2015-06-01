@@ -73,6 +73,7 @@
   </main>
 
   <?php wp_footer(); ?>
+  <?php get_template_part( 'google-analytics' ); ?>
 </body>
 
 </html>
