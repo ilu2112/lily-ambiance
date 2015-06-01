@@ -2831,6 +2831,11 @@ header nav a:hover, header nav .current_page_item {
     box-sizing: border-box;
   }
 }
+@media (min-width: 741px) {
+  header nav {
+    display: block !important;
+  }
+}
 main {
   width: 1100px;
   background: #FFF;

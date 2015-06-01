@@ -115,3 +115,11 @@ header {
     }
   }
 }
+
+
+
+@media (min-width: $media-query-medium + 1) {
+  header nav {
+    display: block !important;
+  }
+}
